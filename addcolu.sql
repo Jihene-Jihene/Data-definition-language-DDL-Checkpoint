@@ -1,7 +1,5 @@
+-- Add Category column to Product table
+ALTER TABLE Product ADD Category VARCHAR2(20);
 
-ALTER TABLE PRODUCT 
-ADD Category VARCHAR2(20);
-
-
-ALTER TABLE ORDERS 
-ADD OrderDate DATE DEFAULT SYSDATE;
+-- Add OrderDate column to Orders table with default value
+ALTER TABLE Orders ADD OrderDate DATE DEFAULT SYSDATE;
